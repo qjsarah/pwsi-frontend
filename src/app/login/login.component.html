@@ -1,0 +1,31 @@
+<!-- Login Header Section -->
+<section class="login-header-section">
+  <h1>{{ login_header }}</h1>
+</section>
+
+<!-- Login Form Section Container -->
+<section class="login-form">
+    <form #loginForm="ngForm" (ngSubmit)="submitLoginForm(loginForm)">
+      <div class="icon-container"><i class="fa-solid fa-circle-user"></i></div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" autocomplete="email" placeholder="name@email.com" required>
+      </div>
+      
+      <div>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" [(ngModel)]="pass" placeholder="********" autocomplete="current-password" required>
+      </div>
+      
+      <div>
+        <div class="button-container">
+
+        <button routerLink="/" class="cancel-btn"><i class="fa-solid fa-arrow-left"></i> Cancel</button>
+
+          <button class="login-btn" type="submit">Login <i class="fa-solid fa-lock-open"></i></button>
+        </div>
+      </div>
+    </form>
+    <img src="assets/login/login_img.jpg" alt="Login Image">
+  </section>
+  

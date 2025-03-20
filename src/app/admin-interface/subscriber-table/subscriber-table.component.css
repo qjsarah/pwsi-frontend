@@ -1,0 +1,76 @@
+.subscriber-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--biggest-font-size);
+    padding: var(--spacer-pd);
+    margin-bottom: 1rem;
+}
+a{
+    text-decoration: none;
+}
+
+table {
+    width: 90%;
+    margin: var(--header-mg);
+    color: var(--primary-color);
+    overflow: hidden;
+}
+
+/* Table Head Styling */
+thead {
+    background-color: var(--primary-color);
+    color: var(--default-font-color);
+}
+
+thead th {
+    text-transform: uppercase;
+    padding: var(--spacer-pd);
+    font-weight: var(--font-mid-bold);
+}
+
+/* Table Body Rows Styling */
+tbody tr {
+    transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--primary-color);
+    color: var(--default-font-color);
+}
+
+/* Cell padding */
+td {
+    padding: var(--medium-font-size);
+}
+
+td:hover{
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    cursor: pointer;
+    padding: var(--btn-pd);
+    border-radius: 4px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    scale: 1.1;
+}
+
+/* Link button style */
+a button {
+    background-color: var(--secondary-color);
+    margin: var(--header-mg);
+    display: block;
+    width: fit-content;
+}
+
+a button:hover {
+    scale: 1.1;
+}

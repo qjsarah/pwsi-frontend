@@ -1,0 +1,162 @@
+/* ======================================== Contact Page Introduction Section Style ======================================== */
+.contact-header-section{
+    color: var(--default-font-color);
+    background-image: var(--cont-color),url(../../../../public/assets/Cover/Cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 24vh;
+    padding: var(--spacer-pd);
+    text-align: center;
+    font-size: var(--biggest-font-size);
+}
+
+.contact-header-section h1{
+    padding: var(--spacer-pd);
+}
+
+/* ======================================== Contact Form Section Style ======================================== */
+
+h2,p{
+    color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: var(--spacer-pd);
+    color: var(--primary-color);
+}
+
+i{
+    padding: var(--icon-pd);
+}
+
+.contact-form, .map-section{
+    display: flex;
+    width: 80%;
+    gap: 5%;
+    margin: var(--header-mg);
+}
+
+.contact-content img{
+    padding: var(--spacer-pd);
+    width: auto;
+    height: 30vh;
+    border-radius: 4px;
+}
+
+.contact-content h2{
+    font-size: var(--big-font-size);
+}
+
+.contact-content p{
+    font-size: var(--medium-font-size);
+    padding: var(--spacer-pd);
+}
+
+.contact-content a{
+    font-size: var(--normal-font-size);
+}
+
+app-contact-form{
+    width: 100%;
+}
+
+/* ======================================== Responsive Styles ======================================== */
+
+/* Laptop/Small Desktop (1024px - 1279px) */
+@media screen and (max-width: 1279px) {
+    .contact-content img {
+        height: 28vh;
+    }
+    
+    .contact-content h2 {
+        font-size: calc(var(--big-font-size) * 0.9);
+    }
+    
+    .contact-content p {
+        font-size: calc(var(--medium-font-size) * 0.95);
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    .contact-header-section {
+        height: 20vh;
+        font-size: calc(var(--biggest-font-size) * 0.9);
+        padding-top: 80px;
+    }
+    
+    .contact-form, .map-section {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contact-content img {
+        height: 25vh;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    app-contact-form {
+        width: 90%;
+    }
+}
+
+/* Mobile (320px - 767px) */
+@media screen and (max-width: 767px) {
+    .contact-header-section {
+        height: 18vh;
+        font-size: calc(var(--biggest-font-size) * 0.8);
+    }
+    
+    .contact-form, .map-section {
+        width: 95%;
+    }
+    
+    .contact-content h2 {
+        font-size: calc(var(--big-font-size) * 0.8);
+    }
+    
+    .contact-content p {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .contact-content a {
+        font-size: calc(var(--normal-font-size) * 0.9);
+    }
+    
+    .contact-content img {
+        height: 22vh;
+    }
+    
+    app-contact-form {
+        width: 100%;
+    }
+}
+
+/* Small Mobile (320px - 479px) */
+@media screen and (max-width: 479px) {
+    .contact-header-section {
+        height: 15vh;
+        font-size: calc(var(--biggest-font-size) * 0.6);
+        padding-top: 60px;
+    }
+    
+    .contact-content img {
+        height: 20vh;
+    }
+
+    .map-section{
+        height: 30vh;
+        padding-bottom: 5%;
+    }
+}

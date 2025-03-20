@@ -1,0 +1,57 @@
+/* ======================================== NAVBAR STYLE ======================================== */
+/* Header styling */
+.header {
+    padding: var(--header-pd);
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+}
+
+/* Logo styling */
+.logo img {
+    width: 55px; /* Fixed size for the logo */
+    height: auto;
+    border-radius: 100%;
+}
+
+/* Navbar styling */
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-mid-bold);
+    color: var(--default-font-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Volunteer button styling */
+.volunteer-btn-container .volunter-btn {
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    font-family: sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.volunteer-btn-container .volunter-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}

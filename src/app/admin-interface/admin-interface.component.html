@@ -1,0 +1,42 @@
+<!-- Admin Header Section -->
+<section class="admin-header-section">
+    <h1>{{ admin_header }}</h1>
+</section>
+
+<!-- Post  Container Section -->
+<section class="admin-post-container-section">
+    <h2>{{  admin_post_container }}</h2>
+    <div class="admin-post-container">
+        <div *ngFor="let post of posts">
+            <div class="admin-post">
+                <a [routerLink]="['/admin-ui/post-details', post._id]">
+                    <img *ngIf="post.image" [src]="post.image" alt="{{ post.title }}" width="100">
+                    <h3>{{ post.title }}</h3>
+                    <p><strong>Posted on:</strong> {{ post.createdAt | date:'medium' }}</p></a>
+            </div>
+        </div>  
+        <a routerLink="/admin-ui/add-post">
+            <div class="add-post-btn">
+                <i class="fa-solid fa-plus"></i>
+                <p>Add New Post</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Crud Link Section -->
+<section class="crud-links-section">
+    <h4>{{ crud_header }}</h4>
+    
+    <a routerLink="/admin-ui/volunteer">
+        <button>Volunteer Table</button>
+    </a>
+    
+    <a routerLink="/admin-ui/contact">
+        <button>Contact Table</button>
+    </a>
+    
+    <a routerLink="/admin-ui/subscriber">
+        <button>Subscriber Table</button>
+    </a>
+</section>

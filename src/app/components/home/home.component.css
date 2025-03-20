@@ -1,0 +1,479 @@
+/* ======================================== Section 1 Introduction Style ======================================== */
+.intro-section{
+    background-image: var(--cont-color),url(../../../../public/assets/Cover/Cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 90vh;
+    display: flex;
+    padding: var(--spacer-pd);
+}
+
+h1 {
+    margin: 0;
+}
+
+.intro-container{
+    padding: var(--default-cont-pd);
+}
+
+.intro-img img{
+    height: 80vh;
+    width: auto;
+}
+
+.intro-container{
+    width: 50%;
+}
+
+.intro-container h1{
+    font-size: var(--biggest-font-size);
+}
+
+.intro-container p{
+    color: var(--default-font-color);
+    width: 80%;
+    font-size: var(--medium-font-size);
+    padding: var(--spacer-pd);
+}
+
+.intro-btn {
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    display: block;
+    margin: 3% auto;
+    font-size: var(--normal-font-size);
+    font-family: sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.intro-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+
+h2,h3,h4{ 
+    color: var(--secondary-color);
+}
+
+p{
+    color: var(--primary-color);
+}
+/* ======================================== Post Section Style ======================================== */
+.post-section{
+    height: auto;
+    margin: var(--spacer-pd);
+}
+
+.post-header{
+    width: 90%;
+    padding: var(--spacer-pd);
+    margin: var(--header-mg);
+    text-align: right;
+}
+
+.post-header h2{
+    font-size: var(--bigger-font-size);
+}
+
+.post-header p{
+    font-size: var(--medium-font-size);
+}
+
+.post-btn {
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    display: block;
+    margin: var(--header-mg);
+    font-size: var(--normal-font-size);
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.post-section a{
+    text-decoration: none;
+}
+
+.post-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* ======================================== About Section Style ======================================== */
+.about-section{
+    display: flex;
+    width: 90%;
+    margin: var(--header-mg);
+    gap: 20%;
+    padding: var(--spacer-pd);
+}
+
+.about-header{
+    width: 100%;
+    font-size: var(--big-font-size);
+}
+
+.about-para {
+    font-size: var(--medium-font-size);
+}
+
+
+
+/* ======================================== Empower Section Style ======================================== */
+
+.empower-section{
+    display: flex;
+    width: 90%;
+    margin: var(--header-mg);
+    gap: 10%;
+}
+
+.emp-img-cont img{
+    width: auto;
+    height: 54vh;
+}
+
+.emp-header{
+    padding: var(--big-pd);
+}
+
+.emp-header h4{
+    font-weight: var(--font-max-bold);
+    font-size: var(--big-font-size);
+    padding: var(--spacer-pd);
+}
+
+.emp-header p{
+    font-size: var(--medium-font-size);
+}
+
+/* ======================================== Quick Contact Section Style ======================================== */
+
+.quick-contact-section{
+    display: flex;
+}
+
+.quick-content{
+    background-color: var(--primary-color);
+    height: 40vh;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.quick{
+    width: 40%;
+    margin: var(--big-pd);
+    padding: 0 0 0 6%;
+}
+
+.quick h5{
+    color: var(--default-font-color);
+    font-weight: var(--font-max-bold);
+    font-size: var(--big-font-size);
+    padding: var(--spacer-pd);
+}
+
+.quick p{
+    color: var(--default-font-color);
+    font-size: var(--medium-font-size);
+}
+
+.quick-btn{
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    display: block;
+    margin: 3% auto;
+    font-size: var(--normal-font-size);
+    font-family: sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.quick-btn:hover {
+    transform: scale(1.1);
+}
+
+.quick-img-cont{
+    position: relative;
+}
+
+.quick-contact-section img{
+    position: absolute;
+    right: 4%;
+    height: 50vh;
+    width: auto;
+}
+
+/* ======================================== Responsive Styles ======================================== */
+
+
+
+/* Laptop/Small Desktop (1024px - 1279px) */
+@media screen and (max-width: 1279px) {
+    .intro-container h1 {
+        font-size: calc(var(--biggest-font-size) * 0.9);
+    }
+    
+    .intro-img img {
+        height: 70vh;
+    }
+    
+    .news-img-wrapper {
+        height: 45vh;
+    }
+    
+    .emp-img-cont img {
+        height: 50vh;
+    }
+    
+    .quick-contact-section img {
+        height: 45vh;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    
+    .intro-section {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    .intro-container {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .intro-container p {
+        width: 100%;
+    }
+    
+    .intro-img img {
+        height: 60vh;
+        margin: 0 0 10px 0;
+        display: block;
+        
+    }
+    
+
+    .news-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .news-header {
+        text-align: center;
+    }
+    
+    
+    .about-section {
+        flex-direction: column;
+        gap: 10%;
+    }
+    
+    
+    .post-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .empower-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .emp-header {
+        padding: var(--spacer-pd);
+    }
+    
+    .quick-contact-section {
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .quick {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .quick-contact-section img {
+        position: relative;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Mobile (320px - 767px) */
+@media screen and (max-width: 767px) {
+    .intro-section {
+        padding: var(--spacer-pd) 10px;
+    }
+    
+    .intro-container h1 {
+        font-size: calc(var(--biggest-font-size) * 0.7);
+    }
+    
+    .intro-container p {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .intro-img img {
+        height: 50vh;
+    }
+    
+    .news-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    
+    .news-header h2 {
+        font-size: calc(var(--bigger-font-size) * 0.8);
+    }
+    
+    .news-header p {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .news-img-wrapper {
+        height: 40vh;
+    }
+    
+    .news a {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .about-section {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .about-header {
+        font-size: calc(var(--big-font-size) * 0.8);
+    }
+    
+    .about-para {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .post-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+    
+    .post {
+        height: auto;
+    }
+    
+    .post img {
+        height: 40vh;
+    }
+    
+    .post-header h3 {
+        font-size: calc(var(--big-font-size) * 0.8);
+    }
+    
+    .empower-section {
+        width: 95%;
+    }
+    
+    .emp-img-cont img {
+        height: 40vh;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .emp-header h4 {
+        font-size: calc(var(--big-font-size) * 0.8);
+    }
+    
+    .emp-header p {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .quick-content {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .quick {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .quick h5 {
+        font-size: calc(var(--big-font-size) * 0.8);
+    }
+    
+    .quick p {
+        font-size: calc(var(--medium-font-size) * 0.9);
+    }
+    
+    .quick-contact-section img {
+        height: 35vh;
+        width: auto;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .intro-btn, .post-btn, .quick-btn {
+        padding: calc(var(--btn-pd) * 1.2);
+        font-size: var(--normal-font-size);
+        width: 80%;
+        max-width: 100px;
+        height: 40px;
+    }
+}
+
+/* Small Mobile (320px - 479px) */
+@media screen and (max-width: 479px) {
+    .intro-container h1 {
+        font-size: calc(var(--biggest-font-size) * 0.6);
+    }
+    
+    .intro-img img {
+        height: 40vh;
+    }
+    
+    .news-img-wrapper {
+        height: 35vh;
+    }
+    
+    .emp-img-cont img {
+        height: 35vh;
+    }
+    
+    .quick-contact-section img {
+        height: 35vh;
+        width: auto;
+        object-fit: contain;
+        max-width: 100%;
+    }
+    
+    .intro-btn, .post-btn, .quick-btn {
+        padding: calc(var(--btn-pd) * 1.3);
+        font-size: calc(var(--normal-font-size) * 0.95);
+        width: 90%;
+    }
+}

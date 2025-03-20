@@ -1,0 +1,114 @@
+/* ======================================== Admin Page Section Style ======================================== */
+.admin-header-section{
+    color: var(--default-font-color);
+    background-image: var(--cont-color),url(../../../public/assets/Cover/Cover.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 30vh;
+    padding: var(--spacer-pd);
+    text-align: center;
+    font-size: var(--biggest-font-size);
+}
+
+.admin-header-section h1{
+    padding: var(--spacer-pd);
+}
+
+/* ======================================== Post Section Style ======================================== */
+
+.admin-post-container-section{
+    margin: var(--header-mg);
+    width: 90%;
+    height: auto;
+}
+
+.admin-post-container-section h2{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--bigger-font-size);
+}
+
+.admin-post{
+    padding: var(--space-tblr-pd);
+}
+
+.admin-post-container{
+    margin: var(--header-mg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.admin-post-container h3{
+    font-size: var(--medium-font-size);
+}
+
+.admin-post-container a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.admin-post-container a:hover{
+text-decoration: underline;
+}
+
+
+.admin-post-container img{
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.add-post-btn{
+    width: auto;
+    height: 50vh;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.add-post-btn i{
+    font-size: var(--icon-size);
+    padding: var(--icon-btn-pd);
+
+}
+
+.add-post-btn p{
+    font-size: var(--medium-font-size);
+}
+
+.add-post-btn:hover{
+    border: 1px solid var(--primary-color);
+    
+}
+
+.crud-links-section{
+    width: 90%;
+    margin: var(--header-mg);
+    text-align: center;
+}
+
+.crud-links-section h4{
+    font-size: var(--big-font-size);
+    color: var(--primary-color);
+    padding: var(--spacer-pd);
+}
+
+.crud-links-section button{
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    font-size: var(--normal-font-size);
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: var(--header-pd);
+}
+
+.crud-links-section button:hover{
+    transform: scale(1.1);
+}
+

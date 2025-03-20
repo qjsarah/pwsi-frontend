@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    /* Our Main Colors */
+    --primary-color: #133695;
+    --secondary-color: #E72D63;
+    --cont-color: linear-gradient(to top, rgba(19, 54, 149), rgba(17, 10, 91, 0.701));
+
+    --default-font-color: #ececec;
+    
+
+    /* Padding and Margin */
+    /* Header and Footer Margine and Padding */
+    --header-pd: 0 10%;
+    --header-mg: 2% auto;
+
+    --footer-mg: 2% auto 0 auto;
+    --footer-pd: 3% 0 0 0;
+    --footer-spacer: 2% 4% 0 4%;
+
+    /* Button Padding */
+    --btn-pd: 10px 20px;
+    
+    /* Defaults Padding */
+    --default-cont-pd: 10% 4%;
+    --form-inp: 2%;
+    --form-inp-big: 1%;
+    --icon-pd: 0 2% 0 0;
+    --icon-btn-pd: 12%;
+    --space-tblr-pd: 4%;
+    --spacer-pd: 1% 0;
+    --big-pd: 3% 0;
+    --left-pd: 0 0 0 6%;
+
+    /* Font Families */
+    --title-font: ;
+    --body-font: ;
+
+    /* Font Sizes */
+    --icon-size: 10rem;
+    --small-icon-size: 2rem;
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.5rem;
+    --medium-font-size: 1.3rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.4rem;
+
+    /* Font Weight */
+    --font-mid-bold: 600;
+    --font-max-bold: 900;
+
+    /* FOR MOBILEEE AHHHH*/
+    --mobile-padding-form: 10px;
+    --mobile-margin-form: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--default-font-color);
+}
+
+h1,h2,h3,h4,h5, p, a{
+    font-family: sans-serif
+}

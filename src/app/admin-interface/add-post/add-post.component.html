@@ -1,0 +1,27 @@
+<!-- Add Post header Section -->
+<section class="add-post-header-section">
+  <h1>Add A New Post</h1>
+</section>
+
+<!-- Add Post Form header Section -->
+<section class="add-form-section">
+
+  <label for="image">Image:</label>
+  <div class="image-container">
+    <input type="file" accept="image/*" id="newFeaturedImage" required>
+  </div>
+
+  <label for="title">Title:</label>
+  <form (submit)="addPost(); $event.preventDefault()">
+    <input type="text" id="newPost" placeholder="Title" maxlength="30" required>
+
+    
+    <label for="content">Content:</label>
+    <textarea name="content" id="newPostContent" placeholder="Write Anything....." required maxlength="120"></textarea>
+
+    <div class="button-container">
+      <button type="button" (click)="cancel()" class="admin-cancel-btn"><i class="fa-solid fa-arrow-left"></i> Cancel</button>
+      <button type="submit" class="admin-post-btn">Submit <i class="fa-solid fa-right-to-bracket"></i></button>
+    </div>
+  </form>
+</section>

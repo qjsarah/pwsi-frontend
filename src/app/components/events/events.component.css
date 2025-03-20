@@ -1,0 +1,71 @@
+
+/* ======================================== Event Header Section Style ======================================== */
+.event-header-section{
+    background-image: var(--cont-color),url(../../../../public/assets/Cover/Cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 30vh;
+    padding: var(--big-pd);
+}
+
+.event-header-container{
+    width: 90%;
+    margin: var(--header-mg);
+    padding: var(--big-pd);
+}
+
+.event-header-container h1{
+    font-size: var(--biggest-font-size);
+}
+
+.event-header-container p{
+    font-size: var(--medium-font-size);
+}
+
+/* ======================================== Post Section Style ======================================== */
+.post-header{
+    width: 90%;
+    margin: var(--header-mg);
+    text-align: right;
+}
+
+.post-header h2{
+    color: var(--secondary-color);
+    font-size: var(--bigger-font-size);
+}
+
+.post-header p{
+    color: var(--primary-color);
+    font-size: var(--medium-font-size);
+}
+
+/* Gallery Section */
+
+.post-gallery-section{
+    width: 91%;
+    margin: var(--header-mg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.post-container{
+    padding: var(--space-tblr-pd);
+}
+
+.post-container a{
+    text-decoration: none;
+    font-size: var(--medium-font-size);
+    color: var(--primary-color);
+}
+
+.post-container a:hover{
+    text-decoration: underline;
+}
+
+.post-container img{
+    height: 40vh;
+    width: auto;
+    border-radius: 4px;
+}

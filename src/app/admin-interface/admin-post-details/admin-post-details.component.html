@@ -1,0 +1,28 @@
+<section class="post-header-section">
+    <div class="post-header">
+        <h1>{{ posts.title }}</h1>
+        <p><strong>Posted on:</strong> {{ posts.createdAt | date:'medium' }}</p>
+    </div>
+    <div class="settings-header">
+        <button (click)="deletePost(posts._id)"><i class="fa-solid fa-trash"></i></button>
+        
+        <a [routerLink]="['/admin-ui/edit-post', posts._id]"><button><i class="fa-solid fa-pen-to-square"></i></button></a>
+    </div>
+</section>
+
+
+<!-- Conetent Section -->
+<section class="content-section">
+    <div class="content-image-container">
+        <img [src]="posts.image" alt="Event Post">
+    </div>
+
+    <div class="event-conent-info">
+        <p><strong>Posted on:</strong> {{ posts.createdAt | date:'medium' }}</p>
+        <h3>{{about_header}}</h3>
+        <p>{{ posts.content }}</p>    
+        <div class="event-content-btn-container">
+            <a routerLink="/admin-ui"><button class="event-btn"><i class="fa-solid fa-arrow-left"></i> Back to Posts</button></a>
+        </div>
+    </div>
+</section>

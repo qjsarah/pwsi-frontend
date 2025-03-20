@@ -1,0 +1,89 @@
+/* ======================================== Event Header Section Style ======================================== */
+.event-header-section{
+    background-image: var(--cont-color),url(../../../../../public/assets/Cover/Cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 23vh;
+    padding: var(--big-pd);
+}
+
+.event-header-container {
+    width: 90%;
+    margin: var(--header-mg);
+    padding: var(--spacer-pd);
+
+}
+
+.event-header-container h1{
+    font-size: var(--biggest-font-size);
+}
+
+.event-header-container p{
+    font-size: var(--medium-font-size);
+    color: var(--default-font-color);
+}
+
+/* ======================================== Content Image Section Style ======================================== */
+
+
+.content-image-container{
+    width: 90%;
+    margin: var(--header-mg);
+}
+
+.content-image-container img{
+    width: 50%;
+    display: block;
+    height: auto;
+    margin: var(--header-mg);
+}
+
+/* ======================================== Event Conent Section Style ======================================== */
+.event-conent-info{
+    width: 90%;
+    margin: var(--header-mg);
+}
+
+.event-conent-info h2, h3, p, a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.event-conent-info h2, h3{
+    padding: var(--spacer-pd);
+}
+
+.event-conent-info h2{
+    font-size: var(--bigger-font-size);
+}
+
+.event-conent-info h3{
+    font-size: var(--big-font-size);
+}
+
+.event-conent-info p{
+    font-size: var(--medium-font-size);
+}
+
+.event-content-btn-container{
+    padding: var(--footer-pd);
+}
+
+.event-btn {
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    display: block;
+    font-size: var(--normal-font-size);
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.event-btn:hover {
+    transform: scale(1.1);
+}

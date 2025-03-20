@@ -1,0 +1,63 @@
+/* ======================================== volunteer Page Introduction Section Style ======================================== */
+.volunteer-header-section{
+    color: var(--default-font-color);
+    background-image: var(--cont-color),url(../../../../public/assets/Cover/Cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--default-font-color);
+    height: 24vh;
+    padding: var(--spacer-pd);
+    text-align: center;
+    font-size: var(--biggest-font-size);
+}
+
+.volunteer-header-section h1{
+    padding: var(--spacer-pd);
+}
+
+
+/* ======================================== volunteer Form Section Style ======================================== */
+
+h2,p{
+    color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: var(--spacer-pd);
+    color: var(--primary-color);
+}
+
+i{
+    padding: var(--icon-pd);
+}
+
+.volunteer-form{
+    display: flex;
+    width: 80%;
+    gap: 5%;
+    margin: var(--header-mg);
+}
+
+.volunteer-content{
+    width: 70%;
+}
+
+.volunteer-content h2{
+    font-size: var(--big-font-size);
+}
+
+.volunteer-content p{
+    font-size: var(--normal-font-size);
+    padding: var(--spacer-pd);
+}
+
+.volunteer-content a{
+    font-size: var(--normal-font-size);
+}
+
+app-volunteer-form{
+    width: 100%;
+}

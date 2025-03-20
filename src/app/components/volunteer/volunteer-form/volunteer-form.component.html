@@ -1,0 +1,26 @@
+<div class="volunteer-form-container">
+      <form (submit) = "addVolunteer($event)">
+        <div class="group">
+          <label for="volName">Name:</label>
+          <input type="text" id="volName"  placeholder="First Name Last Name" required>
+        </div>
+  
+        <div class="group">
+          <label for="volPhone">Phone:</label>
+          <input type="text" id="volPhone" placeholder="09XXXXXXXXXX" required>
+        </div>
+  
+        <div class="group">
+          <label for="volEmail">Email:</label>
+          <input type="email" id="volEmail" placeholder="name@email.com" required>
+        </div>
+  
+        <div class="group">
+          <label for="volMessage">Message:</label>
+          <textarea id="volMessage" placeholder="Write us something...." required></textarea>
+        </div>
+  
+        <button type="submit" class="volunteer-btn">Add Volunteer <i class="fa-solid fa-user"></i></button>
+      </form>
+</div>
+  

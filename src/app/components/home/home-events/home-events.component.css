@@ -1,0 +1,26 @@
+
+.post-container img{
+    height: auto;
+    width: 100%;
+}
+
+.post-container{
+    width: 90%;
+    margin: 0 auto;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.post-container h3{
+    font-size: var(--medium-font-size);
+}
+
+
+.post-container a{
+    text-decoration: none;
+}
+
+.post-container a:hover{
+    text-decoration: underline;
+}

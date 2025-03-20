@@ -1,0 +1,57 @@
+<!-- About Page header Section -->
+<section class="about-header-section">
+    <h1>{{ about_header }}</h1>
+</section>
+
+<!-- Introduction Section-->
+<section class="intro-section">
+    <div class="intro-image-container">
+        <img src="assets/about/About_intro_img.png" alt="Introduction Image">
+    </div>
+    <div class="intro-content">
+        <h2>{{ intro_header }}</h2>
+        <div *ngFor="let intro_para of intro_para">
+            <p>{{ intro_para }}</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="mission-section">
+    <div class="mission-content">
+        <h3>{{ mission_header }}</h3>
+        <p>{{ mission_para }}</p>
+    </div>
+    <div class="mission-img">
+        <img src="assets/about/mission_img.jpg" alt="mission Image">
+    </div>
+    
+</section>
+
+<!-- Vision Section -->
+<section class="vision-section">
+    
+    <div class="vision-img">
+        <img src="assets/about/vision_img.jpg" alt="vision Image">
+    </div>
+    <div class="vision-content">
+        <h3>{{ vision_header }}</h3>
+        <p>{{ vision_para }}</p>
+    </div>
+</section>
+
+<!-- Story Section -->
+<section class="story-section">
+    <div class="story-content">
+        <h4>{{ story_header }}</h4>
+        <p>{{ story_para[1] }}</p>
+    </div>
+    <div class="story-content-outside">
+        <p class="story-para-outside">{{ story_para[2] }}</p>
+    </div>
+    <div class="story-img-container">
+        <img src="assets/about/story_img_1.jpg" alt="Story Image 1">
+        <img src="assets/about/story_img_2.jpg" alt="Story Image 2">
+        <img src="assets/about/story_img_3.jpg" alt="Story Image 3">
+    </div>
+</section>
