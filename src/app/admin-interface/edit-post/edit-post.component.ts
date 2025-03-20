@@ -12,7 +12,7 @@ import { tap } from 'rxjs';
   styleUrl: './edit-post.component.css'
 })
 export class EditPostComponent {
-  readonly APIUrl = 'http://localhost:5038/posts/';
+  readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
   editingPost: any = null;
   posts: any = [];
 

@@ -17,7 +17,7 @@ export class EventDetailsComponent {
   time_header = "Time Post:";
   about_header= "About the Event:";
 
-  readonly APIUrl = 'http://localhost:5038/posts/getPost/';
+  readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/getPost/';
   post: any = {};
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {}

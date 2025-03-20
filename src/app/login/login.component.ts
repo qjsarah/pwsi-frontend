@@ -34,7 +34,7 @@ export class LoginComponent {
     console.log("Sending login request with email:", email);
 
     // Make the login POST request
-    this.http.post('http://localhost:5038/login', { email, pass })
+    this.http.post('https://pwsi-backend.onrender.com/login', { email, pass })
     .subscribe((data: any) => {
         if (data.login === 'fail') { 
             console.log("Login failed:", data.reason);
@@ -43,7 +43,7 @@ export class LoginComponent {
             window.localStorage.setItem('access-token', JSON.stringify({ token: data.token, name: data.name }));
 
             // Make the auth POST request with the token in headers
-            this.http.post('http://localhost:5038/auth', { name: data.name }, {
+            this.http.post('https://pwsi-backend.onrender.com/auth', { name: data.name }, {
                 headers: new HttpHeaders({
                     'Content-Type': 'application/json',
                     'access-token': data.token

@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './contact-form.component.css'
 })
 export class ContactFormComponent {
-  readonly APIUrl = "http://localhost:5038/contacts/";
+  readonly APIUrl = "https://pwsi-backend.onrender.com/contacts/";
 
   constructor(private http: HttpClient) {}
 

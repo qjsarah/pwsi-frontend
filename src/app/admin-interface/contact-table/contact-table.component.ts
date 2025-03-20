@@ -14,7 +14,7 @@ export class ContactTableComponent {
   //Contacrt Header
   contact_header = "Contact's List";
   
-  readonly contactsAPIUrl = "http://localhost:5038/contacts/";
+  readonly contactsAPIUrl = "https://pwsi-backend.onrender.com/contacts/";
   contacts: any = [];
 
   constructor(private http: HttpClient) { }

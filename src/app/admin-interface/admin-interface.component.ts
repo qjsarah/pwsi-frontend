@@ -25,7 +25,7 @@ export class AdminInterfaceComponent {
   // Crud Section Header 
   crud_header = "All Crud Table's"
 
-  readonly APIUrl = 'http://localhost:5038/posts/';
+  readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
   editingPost: any=null;  
 
   constructor(private http:HttpClient){}

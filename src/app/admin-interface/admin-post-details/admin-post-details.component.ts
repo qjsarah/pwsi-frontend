@@ -13,7 +13,7 @@ import { Router, RouterModule, ActivatedRoute } from '@angular/router';
 })
 export class AdminPostDetailsComponent {
   about_header= "About the Event:";
-  readonly APIUrl = 'http://localhost:5038/posts/';
+  readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
   editingPost: any=null;  
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {}

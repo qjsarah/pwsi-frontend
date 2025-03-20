@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './add-post.component.css'
 })
 export class AddPostComponent {
-  readonly APIUrl = 'http://localhost:5038/posts/';
+  readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
   constructor(private http:HttpClient, public router: Router){
   }
   posts: any=[];

@@ -15,7 +15,7 @@ export class FooterComponent {
   footer_para ="Empowering the PWD community through advocacy, support, and inclusion.";
   footer_rights = "2025 PWD Welfare Society Inc. 2.0 | WD - 302 | All rights reserved.";
 
-  readonly emailFormAPIUrl = "http://localhost:5038/subscriber-email/";
+  readonly emailFormAPIUrl = "https://pwsi-backend.onrender.com/subscriber-email/";
 
   constructor(private http: HttpClient) {}
 

@@ -14,7 +14,7 @@ export class VolunteerTableComponent {
   // Volunteer Header 
   volunteer_header= "Volunteers List";
   
-  readonly volunteersAPIUrl = "http://localhost:5038/volunteers/";
+  readonly volunteersAPIUrl = "https://pwsi-backend.onrender.com/volunteers/";
   volunteers: any = [];
 
   constructor(private http: HttpClient) { }

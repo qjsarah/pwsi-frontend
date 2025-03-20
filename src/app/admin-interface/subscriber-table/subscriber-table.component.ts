@@ -15,7 +15,7 @@ export class SubscriberTableComponent {
   // Subscriber Header
   subscriber_header = "Subscriber's Email";
 
-  readonly useremailAPIUrl = "http://localhost:5038/subscriber-email/";
+  readonly useremailAPIUrl = "https://pwsi-backend.onrender.com/subscriber-email/";
   useremail: any = [];
 
   constructor(private http: HttpClient) {}
