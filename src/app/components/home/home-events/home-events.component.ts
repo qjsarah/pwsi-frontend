@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
   styleUrl: './home-events.component.css'
 })
 export class HomeEventsComponent {
-    readonly APIUrl = 'http://localhost:5038/posts/';
+    readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
     constructor(private http:HttpClient){}
     title = 'ui';
     posts$!: Observable<any[]>;

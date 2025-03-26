@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -15,4 +15,9 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'PWD Welfare Society Inc.';
+
+  constructor(private router: Router) {}
+  isAdminPage(): boolean {
+    return this.router.url.includes('/admin-ui');
+  }  
 }

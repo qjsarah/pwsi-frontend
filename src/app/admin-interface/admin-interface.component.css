@@ -5,7 +5,7 @@
     background-position: top;
     background-repeat: no-repeat;
     color: var(--default-font-color);
-    height: 30vh;
+    height: 40vh;
     padding: var(--spacer-pd);
     text-align: center;
     font-size: var(--biggest-font-size);
@@ -13,6 +13,7 @@
 
 .admin-header-section h1{
     padding: var(--spacer-pd);
+    padding-top: 5%;
 }
 
 /* ======================================== Post Section Style ======================================== */
@@ -95,7 +96,7 @@ text-decoration: underline;
     padding: var(--spacer-pd);
 }
 
-.crud-links-section button{
+.crud-links-section button, .logout button {
     padding: var(--btn-pd);
     font-weight: var(--font-mid-bold);
     font-size: var(--normal-font-size);
@@ -111,4 +112,24 @@ text-decoration: underline;
 .crud-links-section button:hover{
     transform: scale(1.1);
 }
-
+.logout {
+    font-size: 1.5rem;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 2%;
+    align-items: center;
+    margin-right: -85%;
+}
+.logout button {
+    background-color: var(--default-font-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+}
+.logout button:hover {
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: 2px solid transparent;
+}

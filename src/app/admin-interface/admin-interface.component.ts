@@ -23,7 +23,7 @@ export class AdminInterfaceComponent {
   admin_post_container = "All Posts"
 
   // Crud Section Header 
-  crud_header = "All Crud Table's"
+  crud_header = "User Information Reports"
 
   readonly APIUrl = 'https://pwsi-backend.onrender.com/posts/';
   editingPost: any=null;  

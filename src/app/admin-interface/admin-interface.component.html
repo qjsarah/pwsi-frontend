@@ -1,6 +1,27 @@
 <!-- Admin Header Section -->
 <section class="admin-header-section">
+    <div class="logout">
+        <h4>Admin</h4>
+        <a routerLink="/login"><button>Log Out</button></a>
+    </div>
     <h1>{{ admin_header }}</h1>
+</section>
+
+<!-- Crud Link Section -->
+<section class="crud-links-section">
+    <h4>{{ crud_header }}</h4>
+    
+    <a routerLink="/admin-ui/volunteer">
+        <button>Volunteers</button>
+    </a>
+    
+    <a routerLink="/admin-ui/contact">
+        <button>Contacts</button>
+    </a>
+    
+    <a routerLink="/admin-ui/subscriber">
+        <button>Subscribers </button>
+    </a>
 </section>
 
 <!-- Post  Container Section -->
@@ -22,21 +43,4 @@
             </div>
         </a>
     </div>
-</section>
-
-<!-- Crud Link Section -->
-<section class="crud-links-section">
-    <h4>{{ crud_header }}</h4>
-    
-    <a routerLink="/admin-ui/volunteer">
-        <button>Volunteer Table</button>
-    </a>
-    
-    <a routerLink="/admin-ui/contact">
-        <button>Contact Table</button>
-    </a>
-    
-    <a routerLink="/admin-ui/subscriber">
-        <button>Subscriber Table</button>
-    </a>
 </section>
