@@ -54,7 +54,7 @@ export class LoginComponent {
                     console.log("Auth failed:", result.reason);
                 } else if (result.auth === 'success') {
                     console.log("Auth successful, redirecting...");
-                    window.location.href = "http://localhost:4200/admin-ui";
+                    window.location.href = "https://pwsi-backend.onrender.com/admin-ui";
                 }
             });
         }

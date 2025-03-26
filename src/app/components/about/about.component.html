@@ -10,7 +10,7 @@
     </div>
     <div class="intro-content">
         <h2>{{ intro_header }}</h2>
-        <div *ngFor="let intro_para of intro_para">
+        <div>
             <p>{{ intro_para }}</p>
         </div>
     </div>
@@ -44,9 +44,11 @@
 <section class="story-section">
     <div class="story-content">
         <h4>{{ story_header }}</h4>
-        <p>{{ story_para[1] }}</p>
+        <p>{{ story_para[0] }}</p>
     </div>
     <div class="story-content-outside">
+        <p>{{ story_para[1] }}</p>
+        <br>
         <p class="story-para-outside">{{ story_para[2] }}</p>
     </div>
     <div class="story-img-container">

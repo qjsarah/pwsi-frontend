@@ -12,7 +12,7 @@
 
 /* Logo styling */
 .logo img {
-    width: 55px; /* Fixed size for the logo */
+    width: 55px;
     height: auto;
     border-radius: 100%;
 }
@@ -39,7 +39,7 @@ nav ul li a:hover {
 }
 
 /* Volunteer button styling */
-.volunteer-btn-container .volunter-btn {
+.volunteer-btn-container .volunteer-btn {
     padding: var(--btn-pd);
     font-weight: var(--font-mid-bold);
     font-family: sans-serif;
@@ -51,7 +51,95 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
-.volunteer-btn-container .volunter-btn:hover {
+.volunteer-btn-container .volunteer-btn:hover {
     background-color: var(--secondary-color);
     transform: scale(1.1);
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--default-font-color);
+  margin: 5px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.mobile-nav{
+    display: none;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .volunteer-btn-container {
+    display: none;
+  }
+
+  .mobile-volunteer-btn-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .mobile-volunteer-btn {
+    padding: var(--btn-pd);
+    font-weight: var(--font-mid-bold);
+    font-family: sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--default-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .mobile-volunteer-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1px 0;
+    border-bottom: 0px solid #ddd;
+  }
 }

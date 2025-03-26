@@ -13,7 +13,7 @@
     width: 90%;
     margin: var(--header-mg);
     padding: var(--spacer-pd);
-
+    text-align: center; /* Center text in header for mobile */
 }
 
 .event-header-container h1{
@@ -40,31 +40,32 @@
     margin: var(--header-mg);
 }
 
-/* ======================================== Event Conent Section Style ======================================== */
-.event-conent-info{
+/* ======================================== Event content Section Style ======================================== */
+.event-content-info{
     width: 90%;
     margin: var(--header-mg);
 }
 
-.event-conent-info h2, h3, p, a{
+.event-content-info h2, h3, p, a{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.event-conent-info h2, h3{
+.event-content-info h2, h3{
     padding: var(--spacer-pd);
 }
 
-.event-conent-info h2{
+.event-content-info h2{
     font-size: var(--bigger-font-size);
 }
 
-.event-conent-info h3{
+.event-content-info h3{
     font-size: var(--big-font-size);
 }
 
-.event-conent-info p{
+.event-content-info p{
     font-size: var(--medium-font-size);
+    word-wrap: break-word;
 }
 
 .event-content-btn-container{
@@ -86,4 +87,28 @@
 
 .event-btn:hover {
     transform: scale(1.1);
+}
+
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .content-image-container img{
+      width: 70%; /* changed from 90% to 70% */
+    }
+    .content-image-container img{
+        margin: var(--header-mg) auto;
+    }
+    .event-btn {
+        width: 100%;
+    }
+    
+    .event-content-info{
+        text-align: center; /*center text in the event content info*/
+    }
+
+    .event-content-info h2,
+    .event-content-info h3 {
+        font-size:  small;
+    }
+
 }

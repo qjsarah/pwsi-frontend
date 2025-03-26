@@ -1,7 +1,6 @@
-
 /* ======================================== Event Header Section Style ======================================== */
-.event-header-section{
-    background-image: var(--cont-color),url(../../../../public/assets/Cover/Cover.jpg);
+.event-header-section {
+    background-image: var(--cont-color), url(../../../../public/assets/Cover/Cover.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -10,62 +9,85 @@
     padding: var(--big-pd);
 }
 
-.event-header-container{
+.event-header-container {
     width: 90%;
     margin: var(--header-mg);
     padding: var(--big-pd);
+    text-align: center;
 }
 
-.event-header-container h1{
+.event-header-container h1 {
     font-size: var(--biggest-font-size);
 }
 
-.event-header-container p{
+.event-header-container p {
     font-size: var(--medium-font-size);
+    word-wrap: break-word;
 }
 
 /* ======================================== Post Section Style ======================================== */
-.post-header{
+.post-header {
     width: 90%;
     margin: var(--header-mg);
     text-align: right;
 }
 
-.post-header h2{
+.post-header h2 {
     color: var(--secondary-color);
     font-size: var(--bigger-font-size);
 }
 
-.post-header p{
+.post-header p {
     color: var(--primary-color);
     font-size: var(--medium-font-size);
+    word-wrap: break-word;
 }
 
 /* Gallery Section */
 
-.post-gallery-section{
+.post-gallery-section {
     width: 91%;
     margin: var(--header-mg);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.post-container{
+.post-container {
     padding: var(--space-tblr-pd);
+    text-align: center;
 }
 
-.post-container a{
+.post-container a {
     text-decoration: none;
     font-size: var(--medium-font-size);
     color: var(--primary-color);
 }
 
-.post-container a:hover{
+.post-container a:hover {
     text-decoration: underline;
 }
 
-.post-container img{
+.post-container img {
     height: 40vh;
     width: auto;
     border-radius: 4px;
+    max-width: 100%;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .post-gallery-section {
+        grid-template-columns: 1fr;
+    }
+
+    .post-container img {
+        height: auto; 
+        width: 90%; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    .post-header {
+        text-align: center;
+    }
 }

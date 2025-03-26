@@ -1,16 +1,28 @@
 <header class="header">
     <div class="logo">
-        <a routerLink="/"><img src="assets/logo/logo.jpg" alt="PWD Welfare Society Inc. Logo"></a>
+      <a routerLink="/"><img src="assets/logo/logo.jpg" alt="PWD Welfare Society Inc. Logo"></a>
     </div>
-    <nav>
-        <ul>
-            <li><a routerLink='/'>HOME</a></li>
-            <li><a routerLink='/about'>ABOUT US</a></li>
-            <li><a routerLink='/event'>EVENTS</a></li>
-            <li><a routerLink='/contact'>CONTACT</a></li>
-        </ul>
+    <nav [class.mobile-nav]="isMobile && !isMenuOpen" [class.open]="isMenuOpen">
+      <ul>
+        <li><a routerLink="/" (click)="closeMenu()">HOME</a></li>
+        <li><a routerLink="/about" (click)="closeMenu()">ABOUT US</a></li>
+        <li><a routerLink="/event" (click)="closeMenu()">EVENTS</a></li>
+        <li class="last-nav-link"><a routerLink="/contact" (click)="closeMenu()">CONTACT</a></li>
+        <li *ngIf="isMobile && isMenuOpen">
+          <div class="mobile-volunteer-btn-container">
+            <a routerLink="/volunteer" (click)="closeMenu()">
+              <button class="mobile-volunteer-btn">VOLUNTEER NOW</button>
+            </a>
+          </div>
+        </li>
+      </ul>
     </nav>
-    <div class="volunteer-btn-container">
-        <a routerLink="/volunteer"><button class="volunter-btn">VOLUNTEER NOW</button></a>
+    <div class="volunteer-btn-container" *ngIf="!isMobile">
+      <a routerLink="/volunteer"><button class="volunteer-btn">VOLUNTEER NOW</button></a>
     </div>
-</header>
+    <div class="burger-menu" *ngIf="isMobile" (click)="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>

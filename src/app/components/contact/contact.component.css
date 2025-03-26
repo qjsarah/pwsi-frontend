@@ -64,6 +64,70 @@ app-contact-form{
     width: 100%;
 }
 
+/* Animation */
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Apply animations */
+.contact-header-section {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.contact-content {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+app-contact-form {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.map-section {
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+
 /* ======================================== Responsive Styles ======================================== */
 
 /* Laptop/Small Desktop (1024px - 1279px) */
